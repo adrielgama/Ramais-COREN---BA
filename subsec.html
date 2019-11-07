@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista Telefônica COREN-BA</title>
+    <link rel="stylesheet" href="css/stl.css" />
+    <link rel="icon" href="phone.png" sizes="16x16 32x32" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+      <!--Float Button-->
+    <a href="index.html" class="float">
+        <i class="fa my-float">SALVADOR</i>
+    </a>
+
+    <section>
+      <!--Corpo-->
+      <header>
+        <img src="logo02.png" alt="COREN-BA" />
+      </header>
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+            <tr class="fixo">
+              <th class="coz"><b>Subseção</b></th>
+              <th class="coz"><b>Telefone</b></th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr>
+              <td>Alagoinhas</td>
+              <td>(75) 3423-4808</td>
+            </tr>
+            <tr>
+              <td>Barreiras</td>
+              <td>(77) 3611-4127</td>
+            </tr>
+            <tr>
+              <td>Feira de Santana</td>
+              <td>(75) 3221-4025</td>
+            </tr>
+            <tr>
+              <td>Guanambi</td>
+              <td>(77) 3451-3221</td>
+            </tr>
+            <tr>
+              <td>Irecê</td>
+              <td>(74) 3461-3024</td>
+            </tr>
+            <tr>
+              <td>Itabuna</td>
+              <td>(73) 3613-6066 / (73) 3212-5238</td>
+            </tr>
+            <tr>
+              <td>Jequié</td>
+              <td>(73) 3525-7141</td>
+            </tr>
+            <tr>
+              <td>Juazeiro</td>
+              <td>(74) 3612-6917</td>
+            </tr>
+            <tr>
+              <td>Paulo Afonso</td>
+              <td>(75) 3281-7285</td>
+            </tr>
+            <tr>
+              <td>Teixeira de Freitas</td>
+              <td>(73) 3291-5195</td>
+            </tr>
+            <tr>
+              <td>Vitória da Conquista</td>
+              <td>(77) 3422-2335</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- follow me template -->
+    <div class="made-with-love">
+      Desenvolvido por
+      <i>&copy;</i>
+      DETI COREN - BA 2019
+    </div>
+
+    <script>
+      // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+      $(window)
+        .on("load resize ", function() {
+          var scrollWidth =
+            $(".tbl-content").width() - $(".tbl-content table").width();
+          $(".tbl-header").css({ "padding-right": scrollWidth });
+        })
+        .resize();
+    </script>
+
+    <script>
+      // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+      $(window)
+        .on("load resize ", function() {
+          var scrollWidth =
+            $(".tbl-content").width() - $(".tbl-content table").width();
+          $(".tbl-header").css({ "padding-right": scrollWidth });
+        })
+        .resize();
+    </script>
+  </body>
+</html>
