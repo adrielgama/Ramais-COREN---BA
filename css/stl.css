@@ -104,27 +104,28 @@ section {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Float button Section */
 
 .float{
 	position: fixed;
-	width: 150px;
-	height: 60px;
-	bottom: 30px;
-	right: 50px;
-	background-color:rgba(255, 255, 255, 0.9);
-	color:rgb(10, 109, 167);
-	border-radius: 80px;
-	text-align:center;
-    box-shadow: 2px 2px 3px rgb(64, 80, 90);
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
+  width: 150px;
+  height: 60px;
+  bottom: 30px;
+  right: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(10, 109, 167);
+  border-radius: 80px;
+  text-align: center;
+  box-shadow: 2px 2px 3px rgb(64, 80, 90);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  transition: background 500ms ease-in-out;
 }
 
 .my-float{
@@ -132,8 +133,10 @@ section {
 }
 
 .float:hover {
-    border: 2px solid;
-    box-shadow: 2px 2px 3px rgb(64, 80, 90);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
+  border: 2px solid;
+  box-shadow: 2px 2px 3px rgb(64, 80, 90);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  background: rgb(10, 109, 167);
+  color: #fff;
 }
